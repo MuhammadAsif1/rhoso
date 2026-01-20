@@ -138,6 +138,7 @@ cat >> livemigration-network-change.yml <<'EOF'
           - /etc/pki/libvirt/clientcert.pem
           - /etc/pki/qemu/server-cert.pem
           - /etc/pki/qemu/client-cert.pem
+          - /var/lib/openstack/certs/libvirt/default/tls.crt
         target_nova_host_specific:
           - /var/lib/openstack/config/nova/02-nova-host-specific.conf
 
